@@ -34,6 +34,9 @@ describe '<%= type_name -%>' do
       # add these two lines in a single test block to enable puppet and hiera debug mode
       # Puppet::Util::Log.level = :debug
       # Puppet::Util::Log.newdestination(:console)
+      # add this line to print out the catalogue
+      # it { pp catalogue.resources }
+
       <%- resources.each do |res| -%>
       <%= res -%>
       <%- end -%>
