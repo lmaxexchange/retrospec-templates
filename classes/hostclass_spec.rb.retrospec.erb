@@ -36,6 +36,8 @@ describe '<%= type_name -%>' do
       # Puppet::Util::Log.newdestination(:console)
       # add this line to print out the catalogue
       # it { pp catalogue.resources }
+      # or this to print all the facts
+      # it { pp facts }
 
       <%- resources.each do |res| -%>
       <%= res -%>
